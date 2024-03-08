@@ -2236,7 +2236,7 @@ a.link-effect:hover::after {
     text-align: center;
     color: #fff;
     padding-top: 20px;
-    background: rgba(0, 0, 0, 0.43);
+    background: rgba(0, 0, 0, 1);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -3824,7 +3824,7 @@ p a:hover {
 .slick-prev:before,
 .slick-next:before {
     color: #fff;
-    background: rgba(17, 17, 17, 0.41);
+    background: #111;
 }
 
 /* vertical lines */
@@ -4864,7 +4864,7 @@ h2.hero-heading {
 /* slick navigation */
 .slick-prev,
 .slick-next {
-    opacity: 0.4;
+    opacity: 1;
     -moz-opacity: 1;
     -webkit-opacity: 1;
     filter: alpha(opacity=100);
