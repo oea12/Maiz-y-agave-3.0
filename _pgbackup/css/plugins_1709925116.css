@@ -2010,7 +2010,7 @@ pre code {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    height: 100% !important;
+    height: auto;
 }
 
 @media (min-width:768px){
@@ -5374,7 +5374,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-toggle {
     position: relative;
     float: right;
-    padding: 0px 10px 9px;
+    padding: 9px 10px;
     margin-top: 8px;
     margin-right: 15px;
     margin-bottom: 8px;
@@ -8417,7 +8417,8 @@ button.close {
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 
-/* Arrows */.slick-prev,
+/* Arrows */
+.slick-prev,
 .slick-next {
     font-size: 0;
     line-height: 0;

@@ -161,27 +161,19 @@
 }
 
 .carousel-item-inside-06 {
-    background-image: url(../img/inside/6.jpg);
+    background-image: url(../img/inside/5.jpg);
 }
 
 .carousel-item-inside-07 {
-    background-image: url(../img/inside/7.jpg);
+    background-image: url(../img/inside/5.jpg);
 }
 
 .carousel-item-inside-08 {
-    background-image: url(../img/inside/8.jpg);
+    background-image: url(../img/inside/5.jpg);
 }
 
 .carousel-item-inside-09 {
-    background-image: url(../img/inside/9.jpg);
-}
-
-.carousel-item-inside-10 {
-    background-image: url(../img/inside/10.jpg);
-}
-
-.carousel-item-inside-11 {
-    background-image: url(../img/inside/11.jpg);
+    background-image: url(../img/inside/5.jpg);
 }
 
 /* 1.8. news IMG BACKGROUND */
@@ -414,7 +406,7 @@ a:focus {
 }
 
 p {
-    text-align: center;
+    text-align: justify;
     font-size: 27px;
     font-weight: 300;
     color: #5f5f5f;
@@ -491,8 +483,6 @@ margin: 0;
 .center-block {
     display: table-cell;
     vertical-align: middle;
-    margin: 0px;
-    padding: 6px;
 }
 
 /* 6. main navigation */
@@ -849,7 +839,7 @@ margin: 0;
 
 @media only screen and (max-width: 640px) {
     .img-fullwidth {
-        min-height: 280px !important;
+        min-height: 350px;
     }
 }
 
@@ -1314,7 +1304,7 @@ h2.hero-heading {
 
 @media only screen and (max-width: 995px) {
     h2.hero-heading {
-        font-size: 36px;
+        font-size: 45px;
         margin: -6px auto;
     }
 }
@@ -2135,13 +2125,13 @@ a.link-effect:hover::after {
 
 @media only screen and (max-width: 880px) {
     .slick-slide {
-        height: 280px !important;
+        height: 450px;
     }
 }
 
 @media only screen and (max-width: 640px) {
     .slick-slide {
-        height: 280px !important;
+        height: 350px;
     }
 }
 
@@ -3571,9 +3561,7 @@ button {
 
 @media only screen and (max-width: 880px) {
     .divider-xl {
-        height: 38px !important;
-        margin: 0px;
-        padding: 0px;
+        height: 100px;
     }
 }
 
@@ -4499,13 +4487,13 @@ p a:hover {
 
 @media only screen and (max-width: 880px) {
     .slick-slide {
-        height: 280px;
+        height: 450px;
     }
 }
 
 @media only screen and (max-width: 640px) {
     .slick-slide {
-        height: 280px !important;
+        height: 350px;
     }
 }
 
@@ -4672,14 +4660,13 @@ h2.hero-heading {
 
 @media only screen and (max-width: 995px) {
     .testimonial blockquote {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
 @media only screen and (max-width: 880px) {
     .testimonial blockquote {
-        font-size: 19px;
-        line-height: 22px;
+        font-size: 25px;
     }
 }
 
@@ -5319,7 +5306,7 @@ button {
 
 @media only screen and (max-width: 995px) {
     .divider-l {
-        height: 37px;
+        height: 70px;
     }
 }
 
@@ -5526,7 +5513,7 @@ button {
     }
 
     .navbar-toggle {
-        margin-top: -14px;
+        margin-top: 0px;
         margin-right: 13px;
         -webkit-transition: all .4s ease-out;
         -moz-transition: all .4s ease-out;
@@ -5604,16 +5591,14 @@ button {
 /* elements home call */
 /* main navigation logo home call */
 .logo {
-    padding: 8px 8px 8px 0px !important;
+    padding: 8px !important;
     margin: 0px !important;
     width: 200px;
-    height: 100px;
 }
 
 @media only screen and (max-width: 768px) {
     .logo {
-        padding: 7px 7px 7px 0px !important;
-        margin-left: -18px !important;
+        margin: 0px;
     }
 }
 
@@ -5786,7 +5771,7 @@ button {
 
 .halves-about .half-about-1,
 .halves-about .half-about-2 {
-    min-height: 489px;
+    min-height: 650px;
 }
 
 .about-bg-1,
@@ -5912,7 +5897,7 @@ button {
 
 @media only screen and (max-width: 995px) {
     .the-line {
-        height: 48px;
+        height: 70px;
     }
 }
 
@@ -6247,12 +6232,11 @@ h2 {
 
 .extra-margin-container {
     position: relative;
+    height: auto;
     min-height: inherit;
+    margin-left: 0;
+    margin-right: 0;
     background: none;
-    height: auto !important;
-    margin: 1px;
-    padding: 1px;
-    display: inline;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -6823,8 +6807,6 @@ a.link-effect.link-effect-light::after {
     .extra-margin-container {
         margin-left: 5px;
         margin-right: 5px;
-        margin-top: 0px;
-        padding-top: 0px;
     }
 }
 
@@ -6886,9 +6868,7 @@ a.link-effect.link-effect-light::after {
 @media only screen and (max-width: 995px) {
     .show-skillbar,
     .show-skillbar-2 {
-        padding: 20px !important;
-        margin: 0px;
-        height: 100%;
+        padding: 0 50px;
     }
 }
 
@@ -8578,16 +8558,12 @@ h4.h4-comments {
 }
 
 @media (max-width:767px) {
-    .logo-light {
-        height: 90px !important;
-        width: 75%;
-        padding: 10px !important;
+    .logo {
+        height: 100px !important;
+        padding: 0px;
     }
 
     .logo-dark {
-        height: 90px !important;
-        width: 75%;
-        padding: 10px !important;
     }
 }
 
@@ -8605,41 +8581,5 @@ h4.h4-comments {
 .logo-dark {
 }
 
-.logo-light {
-}
-
-@media (max-width:991px) {
-    .txt {
-    }
-
-    p {
-        line-height: 5vw;
-        font-size: 3.2vw;
-    }
-}
-
-@media (max-width:479px) {
-    p {
-        font-size: 5vw;
-        line-height: 6vw;
-    }
-}
-
-@media (max-width:879px) {
-    .slick-right-alternative {
-        height: 653px;
-    }
-}
-
-@media (max-width:639px) {
-    .slick-right-alternative {
-        height: 280px;
-    }
-}
-
-@media (max-width:991px) {
-    h4 {
-        font-size: 1.2rem;
-        margin: 0;
-    }
+.logo {
 }
