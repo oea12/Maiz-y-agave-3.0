@@ -1,4 +1,4 @@
-/*
+﻿/*
   [JS Index]
 */
 
@@ -509,7 +509,19 @@ $(function() {
     $("<div class='vertical-lines-wrapper'></div>").appendTo(".vertical-lines");
     $("<div class='vertical-effect'></div>").duplicate(3).appendTo(".vertical-lines-wrapper");
 	
-  
+    // 15. items selector
+    const buttons = document.querySelectorAll(".item-button");
+    const menus = document.querySelectorAll(".menu");
+    function handleClick(e) {
+        e.preventDefault();
+        const targetMenu = document.querySelector(`#${this.dataset.target}`);
+        menus.forEach(menu => {
+            menu.classList.remove("menu-visible");
+            targetMenu.classList.add("menu-visible");
+        });
+    }
+    buttons.forEach(button => button.addEventListener("click", handleClick));
+    
     // 16. datepicker
     $(".datepicker").datepicker({
         orientation: "auto"
