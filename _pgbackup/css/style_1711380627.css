@@ -8618,7 +8618,7 @@ h4.h4-comments {
         height: 90px !important;
         width: 75%;
         padding: 10px !important;
-        display: none !important;
+        display: flex !important;
     }
 
     .logo-dark {
