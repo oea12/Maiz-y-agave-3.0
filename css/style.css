@@ -8682,3 +8682,13 @@ h4.h4-comments {
         margin: 0;
     }
 }
+
+.only {
+    font-size: 39px;
+}
+
+@media (max-width:991px) {
+    .only {
+        font-size: 3vh;
+    }
+}
