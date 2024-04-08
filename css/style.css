@@ -5579,7 +5579,7 @@ button {
         position: relative;
         margin-top: 10px;
         left: 2px;
-        color: #eaeaea;
+        background-color: #eaeaea;
     }
 
     .navbar-collapse.navbar-collapse-position-primary {
