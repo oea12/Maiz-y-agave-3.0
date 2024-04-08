@@ -6831,7 +6831,7 @@ a.link-effect.link-effect-light::after {
     margin-left: 0;
     margin-right: 0;
     max-height: 128px;
-    padding-top: 59px;
+    padding-top: 0px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -8630,6 +8630,8 @@ h4.h4-comments {
 
 .logomax {
     margin-top: 124px;
+    height: 40vh;
+    width: 100%;
 }
 
 @media (max-width:767px) {
