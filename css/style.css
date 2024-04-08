@@ -3582,7 +3582,7 @@ button {
 }
 
 .divider-m {
-    height: 50px;
+    height: 49px;
 }
 
 .divider-m-2 {
@@ -8629,15 +8629,17 @@ h4.h4-comments {
 }
 
 .logomax {
-    margin-top: 124px;
     height: 40vh;
     width: 100%;
+    margin: 150px 0px 0px;
+    padding: 9px;
 }
 
 @media (max-width:767px) {
     .logomax {
         height: 44vh;
-        padding-top: 19px;
+        padding-top: 5px;
+        margin-top: 13px;
     }
 }
 
