@@ -572,8 +572,7 @@ margin: 0;
 /* 9. to top arrow */
 .to-top-arrow {
     position: fixed;
-    right: 80px;
-    bottom: -10px;
+    right: 2%;
     width: 50px;
     height: 50px;
     line-height: 47px;
@@ -602,34 +601,22 @@ margin: 0;
     -ms-transition: all .6s ease;
     -o-transition: all .6s ease;
     transition: all .6s ease;
-    z-index: 105;
+    z-index: 1225;
+    bottom: 10vh;
 }
 
 @media only screen and (max-width: 995px) {
     .to-top-arrow {
-        right: 80px;
     }
 }
 
 @media only screen and (max-width: 880px) {
-    .to-top-arrow {
-        right: 30px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    .to-top-arrow {
-        right: 15px;
-    }
 }
 
 .to-top-arrow.show {
-    bottom: 60px;
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -o-transform: translateY(-20px);
-    transform: translateY(-20px);
     opacity: 1;
     -moz-opacity: 1;
     -webkit-opacity: 1;
@@ -639,14 +626,10 @@ margin: 0;
 
 @media only screen and (max-width: 995px) {
     .to-top-arrow.show {
-        bottom: 60px;
     }
 }
 
 @media only screen and (max-width: 880px) {
-    .to-top-arrow.show {
-        bottom: -5px;
-    }
 }
 
 .to-top-arrow:hover {
@@ -5109,46 +5092,32 @@ h2.hero-heading {
 
 /* to top arrow */
 .to-top-arrow {
-    right: 50px;
 }
 
 @media only screen and (max-width: 995px) {
-    .to-top-arrow {
-        right: 50px;
-    }
 }
 
 @media only screen and (max-width: 880px) {
-    .to-top-arrow {
-        right: 20px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
     .to-top-arrow {
-        right: 20px;
     }
 }
 
 .to-top-arrow.show {
-    bottom: 30px;
 }
 
 @media only screen and (max-width: 995px) {
     .to-top-arrow.show {
-        bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 880px) {
-    .to-top-arrow.show {
-        bottom: 0;
-    }
 }
 
 @media only screen and (max-width: 768px) {
     .to-top-arrow.show {
-        bottom: 0;
     }
 }
 
@@ -6765,47 +6734,118 @@ a.link-effect.link-effect-light::after {
 
 /* to top arrow */
 .to-top-arrow {
-    right: 50px;
 }
 
 @media only screen and (max-width: 995px) {
-    .to-top-arrow {
-        right: 50px;
-    }
 }
 
 @media only screen and (max-width: 880px) {
-    .to-top-arrow {
-        right: 50px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    .to-top-arrow {
-        right: 20px;
-    }
 }
 
 .to-top-arrow.show {
-    bottom: 30px;
 }
 
 @media only screen and (max-width: 995px) {
     .to-top-arrow.show {
-        bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 880px) {
-    .to-top-arrow.show {
-        bottom: 30px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    .to-top-arrow.show {
-        bottom: 0;
+}
+
+.welcome-banner {
+    position: fixed;
+
+    /* Se mantiene fijo en la parte superior */
+    width: 100%;
+    background-color: #e7259d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    left: 0;
+    overflow: hidden;
+
+    /* Asegura que el texto moviéndose no se salga del contenedor */
+    z-index: 1000;
+    bottom: 0;
+    text-transform: uppercase;
+
+    /* Asegura que se muestre al frente */
+}
+
+.welcome-banner a {
+    display: inline-block;
+    white-space: nowrap;
+
+    /* Evita que el texto se envuelva */
+    position: relative;
+    left: 100%;
+    animation: move 30s linear infinite;
+
+    /* Ajusta este tiempo para controlar la velocidad */
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+@keyframes move {
+    from {
+        left: 100%;
     }
+
+    to {
+        left: -100%;
+    }
+}
+
+.language-switcher {
+    position: fixed;
+
+    /* Mantiene el botón flotante y en la misma posición */
+    /* Distancia desde el fondo de la pantalla */
+    /* Distancia desde el lado derecho de la pantalla */
+    z-index: 1000;
+    right: 1.9%;
+    bottom: 12vh;
+
+    /* Asegura que el botón esté visible por encima de otros elementos */
+}
+
+.language-switcher a {
+    display: inline-block;
+    background-color: #e56932;
+
+    /* Color de fondo del botón */
+    color: white;
+
+    /* Color del texto */
+    padding: 15px;
+
+    /* Espaciado interno alrededor del texto */
+    text-decoration: none;
+
+    /* Elimina el subrayado del texto */
+    border-radius: 80px;
+
+    /* Bordes redondeados */
+    font-size: 16px;
+
+    /* Tamaño del texto */
+    transition: background-color 0.3s;
+
+    /* Efecto suave al cambiar de color */
+}
+
+.language-switcher a:hover {
+    background-color: #0056b3;
+
+    /* Color de fondo al pasar el mouse */
 }
 
 /* extra margin */
