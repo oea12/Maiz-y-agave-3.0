@@ -1,0 +1,33 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^maizyagave\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.maizyagave\.com$
+RewriteRule ^/?$ "https\:\/\/maizyagave\.com\/" [R=301,L]
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # Imágenes
+    ExpiresByType image/jpg "access plus 1 week"
+    ExpiresByType image/jpeg "access plus 1 week"
+    ExpiresByType image/gif "access plus 1 week"
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType image/svg+xml "access plus 1 week"
+    # CSS
+    ExpiresByType text/css "access plus 1 hour"
+    # JavaScript
+    ExpiresByType application/javascript "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Desactivar el almacenamiento en caché para archivos HTML
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+    # Configurar Vary: Accept-Encoding header
+    <FilesMatch "\.(js|css|xml|gz|html)$">
+        Header append Vary: Accept-Encoding
+    </FilesMatch>
+</IfModule>
