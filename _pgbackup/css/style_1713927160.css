@@ -112,6 +112,14 @@
     background-image: url(../img/about/2.jpg);
 }
 
+.about-bg-3 {
+    background-image: url(../img/about/3.jpg);
+}
+
+.about-bg-4 {
+    background-image: url(../img/about/4.jpg);
+}
+
 /* 1.4. about team IMG BACKGROUND */
 .carousel-item-team-01 {
     background-image: url(../img/about/team/1.jpg);
@@ -5772,7 +5780,8 @@ button {
     display: flex;
 }
 
-.halves-about .half-about-1 {
+.halves-about .half-about-1,
+.halves-about .half-about-3 {
     -webkit-box-flex: 50%;
     -ms-flex: 50%;
     flex: 50%;
@@ -5796,19 +5805,24 @@ button {
     }
 }
 
-.halves-about .half-about-2 {
+.halves-about .half-about-2,
+.halves-about .half-about-4 {
     -webkit-box-flex: 50%;
     -ms-flex: 50%;
     flex: 50%;
 }
 
 .halves-about .half-about-1,
-.halves-about .half-about-2 {
+.halves-about .half-about-2,
+.halves-about .half-about-3,
+.halves-about .half-about-4 {
     min-height: 489px;
 }
 
 .about-bg-1,
-.about-bg-2 {
+.about-bg-2,
+.about-bg-3,
+.about-bg-4 {
     width: 100%;
     height: auto;
     background-position: center center;
@@ -5835,7 +5849,8 @@ button {
     transition: all 1s ease;
 }
 
-.about-bg-1 {
+.about-bg-1 ,
+.about-bg-3 {
     position: relative;
     -webkit-border-radius: 0 50px 0 0;
     -moz-border-radius: 0 50px 0 0;
@@ -5844,7 +5859,8 @@ button {
     border-radius: 0 50px 0 0;
 }
 
-.about-bg-2 {
+.about-bg-2,
+.about-bg-4 {
     position: relative;
     -webkit-border-radius: 0 0 0 50px;
     -moz-border-radius: 0 0 0 50px;
@@ -5853,7 +5869,8 @@ button {
     border-radius: 0 0 0 50px;
 }
 
-.about-bg-2 {
+.about-bg-2,
+.about-bg-4 {
     top: 80px;
 }
 
