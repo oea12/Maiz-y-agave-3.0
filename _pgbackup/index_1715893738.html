@@ -3,16 +3,19 @@
     <head> 
         <!-- plugin de accesibilidad -->
         <script>
-window.onload = function() {
-    // Crear el elemento script para UserWay
-    var userwayScript = document.createElement('script');
-    userwayScript.src = "https://cdn.userway.org/widget.js";
-    userwayScript.dataset.account = "MIc4lhFPyx";
-    userwayScript.async = true; // Usar async para no bloquear el parseo del DOM
+  // Establecer el retardo en milisegundos
+  var delay = 5000; // 5 segundos
+
+  setTimeout(function() {
+    // Crear el elemento script
+    var script = document.createElement('script');
+    script.src = "https://cdn.userway.org/widget.js";
+    script.dataset.account = "MIc4lhFPyx";
+    script.async = true; // Usar async para no bloquear el parseo del DOM
 
     // Agregar el script al documento
-    document.head.appendChild(userwayScript);
-};
+    document.head.appendChild(script);
+  }, delay);
 </script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQP69JVVY">
@@ -389,19 +392,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="container"> 
                 <div class="extra-margin-container"> <a style="color: #e71c9a; font-style: italic; position: static; font-weight: 700; text-shadow: 0.2px 0.2px rgba(255, 255, 255, 0.54);"></a>
                     <div class="reservation-inner clearfix"> 
-                        <script>
-window.onload = function() {
-    // Crear el elemento script para OpenTable
-    var opentableScript = document.createElement('script');
-    opentableScript.type = 'text/javascript';
-    opentableScript.src = '//www.opentable.com/widget/reservation/loader?rid=1317490&type=standard&theme=wide&color=8&dark=false&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&ot_campaign=Reservas%20Landing%20Page&font=helvetica&ot_logo=subtle&primary_color=ffffff&primary_font_color=333333&button_color=E71C9A&button_font_color=ffffff&logo_pid=62750349&cfe=true';
-    opentableScript.style.padding = "0px";
-    opentableScript.style.margin = "0px";
-
-    // Agregar el script al documento
-    document.head.appendChild(opentableScript);
-};
-</script>
+                        <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1317490&type=standard&theme=wide&color=8&dark=false&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&ot_campaign=Reservas%20Landing%20Page&font=helvetica&ot_logo=subtle&primary_color=ffffff&primary_font_color=333333&button_color=E71C9A&button_font_color=ffffff&logo_pid=62750349&cfe=true' style="padding: 0px; margin: 0px;"></script>                         
                     </div>                     
                 </div>                 
             </div>             
@@ -2200,29 +2191,6 @@ window.onload = function() {
         </div>         
         <!-- photoSwipe background end -->         
         <!-- scripts start -->         
-        <script>
-function loadUserWay() {
-    var userwayScript = document.createElement('script');
-    userwayScript.src = "https://cdn.userway.org/widget.js";
-    userwayScript.dataset.account = "MIc4lhFPyx";
-    userwayScript.async = true;
-    document.head.appendChild(userwayScript);
-}
-
-function loadOpenTable() {
-    var opentableScript = document.createElement('script');
-    opentableScript.type = 'text/javascript';
-    opentableScript.src = '//www.opentable.com/widget/reservation/loader?rid=1317490&type=standard&theme=wide&color=8&dark=false&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&ot_campaign=Reservas%20Landing%20Page&font=helvetica&ot_logo=subtle&primary_color=ffffff&primary_font_color=333333&button_color=E71C9A&button_font_color=ffffff&logo_pid=62750349&cfe=true';
-    opentableScript.style.padding = "0px";
-    opentableScript.style.margin = "0px";
-    document.head.appendChild(opentableScript);
-}
-
-window.onload = function() {
-    loadUserWay();
-    loadOpenTable();
-};
-</script>
         <!-- Accessibility Code for "maiz-y-agave-3-0-tcw5.vercel.app" -->
         <script src="js/plugins-dist.js"></script>         
         <script src="js/dinex-dist.js"></script>         
