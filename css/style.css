@@ -2802,7 +2802,9 @@ a.link-effect:hover::after {
     -webkit-opacity: 0.2;
     filter: alpha(opacity=20);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-}.swiper-slide-duplicate-active .swiper-slide-inner-bg,
+}
+
+.swiper-slide-duplicate-active .swiper-slide-inner-bg,
 .swiper-slide-active .swiper-slide-inner-bg {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -8698,7 +8700,7 @@ h4.h4-comments {
 
 .logomax {
     padding: 0x;
-    height: 40vh;
+    height: 100%;
     margin: 0;
 }
 
