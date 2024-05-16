@@ -2,7 +2,21 @@
 <html lang="en"> 
     <head> 
         <!-- plugin de accesibilidad -->
-        <script src="https://cdn.userway.org/widget.js" data-account="MIc4lhFPyx"></script>
+        <script>
+  // Establecer el retardo en milisegundos
+  var delay = 5000; // 5 segundos
+
+  setTimeout(function() {
+    // Crear el elemento script
+    var script = document.createElement('script');
+    script.src = "https://cdn.userway.org/widget.js";
+    script.dataset.account = "MIc4lhFPyx";
+    script.async = true; // Usar async para no bloquear el parseo del DOM
+
+    // Agregar el script al documento
+    document.head.appendChild(script);
+  }, delay);
+</script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQP69JVVY">
 </script>
@@ -44,7 +58,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7S9J444" height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <!-- preloader start -->         
+        <!-- preloader start         
         <div class="preloader-bg"></div>         
         <div id="preloader"> 
             <div id="preloader-status"> 
@@ -125,7 +139,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                             <div class="swiper-slide-inner-txt"> 
                                                 <!-- section subtitle start -->                                                 
                                                 <div class="section-title section-title-home fadeIn-element"> 
-                                                    <img src="img/White%20(2).svg" class="logomax">
+                                                    <img src="img/hero-logo.webp" class="logomax">
                                                 </div>                                                 
                                                 <!-- section subtitle end -->                                                 
                                                 <!-- divider start -->                                                 

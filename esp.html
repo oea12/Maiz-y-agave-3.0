@@ -2,7 +2,21 @@
 <html lang="en"> 
     <head> 
         <!-- plugin de accesibilidad -->
-        <script src="https://cdn.userway.org/widget.js" data-account="MIc4lhFPyx"></script>
+        <script>
+  // Establecer el retardo en milisegundos
+  var delay = 7000; // 7 segundos
+
+  setTimeout(function() {
+    // Crear el elemento script
+    var script = document.createElement('script');
+    script.src = "https://cdn.userway.org/widget.js";
+    script.dataset.account = "MIc4lhFPyx";
+    script.async = true; // Usar async para no bloquear el parseo del DOM
+
+    // Agregar el script al documento
+    document.head.appendChild(script);
+  }, delay);
+</script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQP69JVVY">
 </script>
