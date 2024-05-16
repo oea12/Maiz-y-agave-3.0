@@ -75,7 +75,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="main-navigation"> 
                         <div class="navbar-header"> 
                             <!-- navigation button start -->                             
-                            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle
+                            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+                                <span class="sr-only">Toggle
                             navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                             </button>                             
                             <!-- navigation button end -->                             
@@ -575,7 +576,11 @@ window.onload = function() {
                             <!-- items selector start -->                             
                             <!-- items selector end -->                             
                             <!-- divider start -->                             
-                            <div class="item-selector" style="height: 100%; width: 100%; display: inline-flex; position: relative;"><a href="1ST FLOOR MENU.pdf" class="item-button" target="_blank" style="color: #69B9C2; text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">Patio</a><a href="2ND FLOOR MENU.pdf" class="item-button" target="_blank" style="text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">Balcones</a><a href="3RD FLOOR MENU.pdf" class="item-button" target="_blank" style="color: #E45C20; text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">La azotea</a><a href="KIDS MENU.pdf" class="item-button" target="_blank" style="color: #e71c9a; text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">KIDS</a>
+                            <div class="item-selector" style="height: 100%; width: 100%; display: inline-flex; position: relative;">
+                                <a href="1ST FLOOR MENU.pdf" class="item-button" target="_blank" style="color: #69B9C2; text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">Patio</a>
+                                <a href="2ND FLOOR MENU.pdf" class="item-button" target="_blank" style="text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">Balcones</a>
+                                <a href="3RD FLOOR MENU.pdf" class="item-button" target="_blank" style="color: #E45C20; text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">La azotea</a>
+                                <a href="KIDS MENU.pdf" class="item-button" target="_blank" style="color: #e71c9a; text-decoration: none; display: inline-block; padding: 8px 16px; border: none; cursor: pointer; position: relative; z-index: 10000;">KIDS</a>
                             </div>
                             <div class="divider-l"></div>                             
                             <!-- divider end -->                             
@@ -2147,10 +2152,10 @@ window.onload = function() {
             <!-- container end -->             
         </div>         
         <!-- footer end -->         
-        <div class="language-switcher">
-            <a href="esp.html">ESP</a>
+        <div class="language-switcher"><a href="esp.html">ESP</a>
         </div>         
-        <div class="welcome-banner"><a href="" style="color: #ffffff;">🐾 Pet Friendly - Four-legged friends welcome!</a>
+        <div class="welcome-banner">
+            <a href="" style="color: #ffffff;">🐾 Pet Friendly - Four-legged friends welcome!</a>
         </div>         
         <!-- to top arrow start -->         <a href="#home"> <div class="to-top-arrow"> <span class="ion-ios-arrow-up"></span> 
             </div> </a> 
@@ -2195,6 +2200,29 @@ window.onload = function() {
         </div>         
         <!-- photoSwipe background end -->         
         <!-- scripts start -->         
+        <script>
+function loadUserWay() {
+    var userwayScript = document.createElement('script');
+    userwayScript.src = "https://cdn.userway.org/widget.js";
+    userwayScript.dataset.account = "MIc4lhFPyx";
+    userwayScript.async = true;
+    document.head.appendChild(userwayScript);
+}
+
+function loadOpenTable() {
+    var opentableScript = document.createElement('script');
+    opentableScript.type = 'text/javascript';
+    opentableScript.src = '//www.opentable.com/widget/reservation/loader?rid=1317490&type=standard&theme=wide&color=8&dark=false&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&ot_campaign=Reservas%20Landing%20Page&font=helvetica&ot_logo=subtle&primary_color=ffffff&primary_font_color=333333&button_color=E71C9A&button_font_color=ffffff&logo_pid=62750349&cfe=true';
+    opentableScript.style.padding = "0px";
+    opentableScript.style.margin = "0px";
+    document.head.appendChild(opentableScript);
+}
+
+window.onload = function() {
+    loadUserWay();
+    loadOpenTable();
+};
+</script>
         <!-- Accessibility Code for "maiz-y-agave-3-0-tcw5.vercel.app" -->
         <script src="js/plugins-dist.js"></script>         
         <script src="js/dinex-dist.js"></script>         
