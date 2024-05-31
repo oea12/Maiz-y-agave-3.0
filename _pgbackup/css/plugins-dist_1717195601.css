@@ -7222,11 +7222,11 @@ button.close {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1000000;
     display: none;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
     outline: 0;
-    z-index: 1050;
 }
 
 .modal.fade .modal-dialog {

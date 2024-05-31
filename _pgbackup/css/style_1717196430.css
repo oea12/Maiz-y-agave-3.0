@@ -6,7 +6,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: none;
-    z-index: 1045;
+    z-index: 1;
 }
 
 .weird-modal {
@@ -17,17 +17,17 @@
     background: transparent;
     border: none;
     display: none;
-    z-index: 1052;
+    z-index: 2;
     text-align: center;
 }
 
 .weird-close {
     position: absolute;
-    top: 50px;
-    right: 50px;
-    font-size: 100px;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
     cursor: pointer;
-    color: black; /* Change the color if necessary */
+    color: white; /* Change the color if necessary */
 }
 
 .weird-modal-image {

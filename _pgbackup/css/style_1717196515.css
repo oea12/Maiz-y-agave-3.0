@@ -25,9 +25,9 @@
     position: absolute;
     top: 50px;
     right: 50px;
-    font-size: 100px;
+    font-size: 200px;
     cursor: pointer;
-    color: black; /* Change the color if necessary */
+    color: white; /* Change the color if necessary */
 }
 
 .weird-modal-image {

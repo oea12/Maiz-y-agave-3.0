@@ -7226,7 +7226,6 @@ button.close {
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
     outline: 0;
-    z-index: 1050;
 }
 
 .modal.fade .modal-dialog {

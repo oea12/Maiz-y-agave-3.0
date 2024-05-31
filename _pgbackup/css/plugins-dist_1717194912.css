@@ -7184,15 +7184,13 @@ button.list-group-item-danger.active:hover {
 
 .close {
     float: right;
-    font-size: 164px;
+    font-size: 21px;
     font-weight: 700;
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
     filter: alpha(opacity=20);
     opacity: .2;
-    width: 45px;
-    height: 23px;
 }
 
 .close:focus,
@@ -7222,11 +7220,11 @@ button.close {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1000000;
     display: none;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
     outline: 0;
-    z-index: 1050;
 }
 
 .modal.fade .modal-dialog {

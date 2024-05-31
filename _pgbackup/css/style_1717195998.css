@@ -1,4 +1,4 @@
-.weird-overlay {
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,10 +6,10 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: none;
-    z-index: 1045;
+    z-index: 1;
 }
 
-.weird-modal {
+.modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -17,20 +17,20 @@
     background: transparent;
     border: none;
     display: none;
-    z-index: 1052;
+    z-index: 2;
     text-align: center;
 }
 
-.weird-close {
+.close {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 10px;
+    right: 10px;
     font-size: 100px;
     cursor: pointer;
-    color: black; /* Change the color if necessary */
+    color: white; /* Change the color if necessary */
 }
 
-.weird-modal-image {
+.modal-image {
     width: auto;
     height: auto;
     max-width: 100%;
