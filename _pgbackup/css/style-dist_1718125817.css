@@ -275,7 +275,7 @@ u,
 ul,
 var,
 video {
-    padding: 0px;
+    padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -7886,7 +7886,7 @@ h4.h4-comments {
 
     p {
         line-height: 5vw;
-        font-size: 1.5rem;
+        font-size: 3.2vw;
     }
 }
 
