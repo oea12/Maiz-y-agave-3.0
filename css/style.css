@@ -27,7 +27,9 @@
     right: 50px;
     font-size: 100px;
     cursor: pointer;
-    color: black; /* Change the color if necessary */
+    color: black;
+
+    /* Change the color if necessary */
 }
 
 .weird-modal-image {
@@ -36,4 +38,11 @@
     max-width: 100%;
     max-height: 100%;
     cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.none {
 }
